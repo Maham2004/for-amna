@@ -1,0 +1,206 @@
+DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For My Janum ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<!-- Password Screen -->
+
+<div id="login">
+
+<h1>🔒 Before You Enter...</h1>
+
+<p>
+Only one person can unlock this little world.
+</p>
+
+<h3>
+What is the name I always call you with love?
+</h3>
+
+<input
+type="text"
+id="answer"
+placeholder="Type your answer here..."
+>
+
+<br><br>
+
+<button onclick="checkAnswer()">
+Unlock ✨
+</button>
+
+<p id="wrong"></p>
+
+</div>
+
+<!-- Main Website -->
+
+<div id="main">
+
+<h1 id="welcome">
+Welcome, Janum 🤍
+</h1>
+
+<p class="typing">
+This isn't just a webpage...
+<br>
+It's a little place I made only for you.
+</p>
+
+<button onclick="nextPage()">
+Begin The Journey 💙
+</button>
+
+</div>
+
+<script src="script.js"></script>
+<div id="page2" style="display:none;">
+
+<h1>✨ A Little Message</h1>
+
+<p id="messageBox"></p>
+
+<br>
+
+<button onclick="showPage3()">
+Continue 🤍
+</button>
+
+</div>
+<div id="page3" style="display:none;">
+
+<h1>🎁 A Little Surprise</h1>
+
+<div class="gift" onclick="openGift()">
+🎁
+</div>
+
+<p>
+Tap the gift box...
+</p>
+
+<div id="letter" style="display:none;">
+
+<h2>💌 Dear Amna,</h2>
+
+<p>
+Life changes, time passes,
+but I truly hope our friendship never loses its place.
+
+Thank you for always being there.
+
+Thank you for understanding me.
+
+Thank you for making even ordinary days feel special.
+
+Always stay happy.
+
+Always keep smiling.
+
+You'll always be my Janum. 🤍
+</p>
+
+<button onclick="finishJourney()">
+One Last Click ✨
+</button>
+
+</div>
+
+</div>
+<div id="finalPage" style="display:none;">
+
+<h1>💙 Thank You, Janum 💙</h1>
+
+<p class="finalText">
+
+If you're reading this...
+
+Just remember one thing.
+
+No matter how busy life gets...
+
+You'll always have a special place in my heart.
+
+Thank you for being my safe place.
+
+Never stop smiling.
+
+Take care of yourself.
+
+Stay blessed.
+
+🤍
+
+Made with lots of love,
+
+Your Janum
+
+</p>
+<h2>✨ Memory Jar ✨</h2>
+
+<div class="memoryJar">
+
+<span onclick="showMemory(1)">⭐</span>
+
+<span onclick="showMemory(2)">⭐</span>
+
+<span onclick="showMemory(3)">⭐</span>
+
+<span onclick="showMemory(4)">⭐</span>
+
+<span onclick="showMemory(5)">⭐</span>
+
+</div>
+
+<p id="memoryText"></p>
+</div>
+<div id="secretPage" style="display:none;">
+
+<h1>✨ Secret Message Unlocked ✨</h1>
+
+<p class="secretText">
+
+You actually clicked every single star...
+
+That means you didn't skip anything.
+
+Thank you for reading every word.
+
+I made this little world only for you.
+
+I hope this tiny surprise made you smile.
+
+No matter where life takes us,
+
+You'll always be my Janum. 🤍
+
+</p>
+
+<br>
+
+<h2>🌙 The End 🌙</h2>
+
+<p>
+Made with lots of love ❤️
+</p>
+<button onclick="lastMessage()">
+One Last Secret 🤍
+</button>
+
+<p id="lastSecret"></p>
+<p id="goodbye"></p>
+</div>
+</body>
+</html>
